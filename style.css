@@ -212,3 +212,75 @@
 .ex-12-button:hover .ex-12-top-white{
     animation-play-state: running;
 }
+
+@keyframes full-move-top {
+    0% {
+        left: 10%;
+        top:-10px;
+    }
+    20%{
+        left: 70%;
+        top:-10px;
+    }
+    40%{
+        left: 70%;
+        top:100%;
+    }
+    60%{
+        right: 10%;
+        bottom: -10px;
+    }
+    80%{
+        right: 100%;
+        bottom:-10px;
+    }
+    100%{
+        left: 10%;
+        top:-10px;
+    }
+}
+
+@keyframes full-move-bottom {
+    0% {
+        right: 10%;
+        bottom:-10px;
+    }
+    20%{
+        right: 70%;
+        bottom:-10px;
+    }
+    40%{
+        right: 70%;
+        bottom:100%;
+    }
+    60%{
+        left: 10%;
+        top: -10px;
+    }
+    80%{
+        left: 100%;
+        top:-10px;
+    }
+    100%{
+        right: 10%;
+        bottom:-10px;
+    }
+}
+
+.ex-13-top-white{
+    animation: full-move-top 4s linear;
+    animation-play-state: paused;
+}
+
+.ex-13-bottom-white{
+    animation: full-move-bottom 4s linear;
+    animation-play-state: paused;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-play-state: running;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-play-state: running;
+}
